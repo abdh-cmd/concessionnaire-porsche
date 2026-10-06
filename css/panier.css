@@ -1,0 +1,117 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Conteneur principal */
+  .panier-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 80px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Titre de la page */
+  .panier-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1c1c1c;
+  }
+  
+  /* Liste des articles du panier */
+  .panier-items {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .panier-items th,
+  .panier-items td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  .panier-items th {
+    background-color: #f0f0f0;
+  }
+  
+  .panier-items td img {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  /* Actions sur chaque article */
+  .item-actions a {
+    text-decoration: none;
+    background-color: #375dc5;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .item-actions a:hover {
+    background-color: #AF1740;
+  }
+  
+  /* Résumé du panier */
+  .panier-resume {
+    margin-top: 30px;
+    text-align: right;
+    font-size: 16px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+  }
+  
+  .panier-resume p {
+    margin-bottom: 10px;
+  }
+  
+  .panier-resume .total {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Bouton de validation de commande */
+  .btn-commander {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #375dc5;
+    color: #fff;
+    padding: 12px 0;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-commander:hover {
+    background-color: #AF1740;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .panier-items, .panier-resume {
+      font-size: 14px;
+    }
+  }
+  

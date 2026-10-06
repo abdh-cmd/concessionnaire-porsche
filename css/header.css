@@ -1,0 +1,77 @@
+/* Style général du menu de navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f; /* Couleur de fond du menu */
+}
+
+nav .logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Style du bouton Connexion / Déconnexion */
+.btn-logout {
+    background-color: #AF1740; /* Rouge spécifique */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+/* Effet hover et focus */
+.btn-logout:hover, .btn-logout:focus {
+    background-color: #9a1331; /* Rouge légèrement plus foncé */
+    transform: scale(1.05); /* Agrandissement léger */
+}
+
+/* Effet de focus pour l'accessibilité */
+.btn-logout:focus {
+    outline: none;
+    box-shadow: 0 0 5px #fff;
+}
+
+/* Style des liens dans le menu */
+.nav-links li a {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Ajouter de l'espace entre les éléments du menu */
+.nav-links li {
+    padding: 8px 15px;
+}
+
+/* Conteneur global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+

@@ -1,0 +1,98 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Conteneur principal */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  /* Section d’image du véhicule */
+  .voiture-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .voiture-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Section de description */
+  .voiture-details {
+    padding: 20px;
+  }
+  
+  .voiture-details h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #1c1c1c;
+  }
+  
+  .voiture-details p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  /* Caractéristiques techniques */
+  .voiture-caracteristiques {
+    margin-top: 20px;
+  }
+  
+  .voiture-caracteristiques ul {
+    list-style: none;
+  }
+  
+  .voiture-caracteristiques li {
+    font-size: 15px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Boutons d'action */
+  .actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .actions a {
+    text-decoration: none;
+    background-color: #375dc5;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .actions a:hover {
+    background-color: #AF1740;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .actions {
+      flex-direction: column;
+    }
+  }
+  

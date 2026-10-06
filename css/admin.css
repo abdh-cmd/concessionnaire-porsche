@@ -1,0 +1,79 @@
+/* admin.css */
+
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Titres */
+h1, h2 {
+    text-align: center;
+    margin: 20px;
+    color: #333;
+}
+
+/* Message de confirmation ou d'erreur */
+.message {
+    text-align: center;
+    color: #AF1740;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Style du formulaire de demande d'essai (style identique aux formulaires de la page stats) */
+.stat-form {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style des rangées du formulaire */
+.stat-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Labels du formulaire */
+.stat-row label {
+    width: 150px;
+    font-weight: bold;
+}
+
+/* Champs en lecture seule */
+.stat-row input[readonly] {
+    width: 200px;
+    margin-right: 10px;
+    padding: 5px;
+    border: none;
+    background-color: #f9f9f9;
+}
+
+/* Menu déroulant */
+.stat-row select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Bouton de validation */
+.stat-form button {
+    padding: 6px 12px;
+    background-color: #375dc5;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.stat-form button:hover {
+    background-color: #AF1740;
+}
