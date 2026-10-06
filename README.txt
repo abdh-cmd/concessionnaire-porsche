@@ -1,26 +1,31 @@
-Dans cette version tout le panier est au complet : 
+# Concessionnaire Porsche
 
-On peut ajouter au panier depuis la card, depuis les détails. 
-On peut choisir de supprimer 1 modele par 1 ou supprimer tout le panier. 
+Application web de gestion d'un concessionnaire automobile, réalisée dans le cadre d'un projet de formation en groupe.
 
-//Nouveau fichier admin/gerer_clients.php pour récup les clients dans un formulaire par id.
-Nouveau fichier controller/ClientController.php pour gérer les clients dans le concess
+## Technologies
 
+- PHP
+- PDO
+- MySQL
+- HTML / CSS
+- Architecture MVC
 
-Un client ne peut demander qu'un essai à la fois pour un véhicule.
-Ex : Si un client vient demander un essai sur le véhicule 1, une autre demande d'essai viendra écraser le précédent
+## Fonctionnalités principales
 
-Historique des modifications
-==============================
+- Inscription et authentification des utilisateurs
+- Gestion des rôles client et concessionnaire
+- Consultation des modèles de véhicules
+- Panier utilisateur
+- Demande d'essai de véhicule
+- Espace d'administration
+- Gestion des clients, modèles et essais
 
-| Nom     | Date       | Modification réalisée                                                            | Fichier concerné                                                       |
-|---------|------------|----------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| Anthony | 12/03/2025 | - Suppression essais dans page détail                                            | modeles.php                                                            |
-|         |            | - Rajout essais dans card                                                        | demande_essai.php                                                      |
-|         |            | - Affichage essai dans page détail                                               | details_voiture.php                                                    |
-| Anthony | 13/03/2025 | - Ajout du bouton "Stats" dans le header pour concessionnaires                   | header.php                                                             |
-| Anthony | 13/03/2025 | - Création et intégration de la page statistiques                                | stats.php                                                              |
-| Anthony | 13/03/2025 | - Création du StatController et du StatModel pour récupérer et afficher les 
-                           statistiques                                                                   | controller/StatController.php, model/StatModel.php                     |
+## Architecture
 
+- `controller/` → logique applicative
+- `modele/` → modèles et accès aux données
+- `view/` → pages et composants d'interface
+- `bdd/` → script SQL et connexion à la base de données
+- `css/` → feuilles de style
+- `images/` → ressources visuelles
 
